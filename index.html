@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riiples</title>
+    <style>
+        
+        body{
+            margin:0px;
+            font-family: sans-serif;
+        }
+        #contenido{
+
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg,rgb(8, 156, 255),rgb(111, 187, 149));
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #jeacodeRiple{
+
+            color:white;
+            margin-bottom: 100px;
+            font-size: 30px;
+
+        }
+        #riples{
+            width: 300px;
+            height: 300px;
+            
+            
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-transform: rotateX(70deg);
+            
+        }
+        .itemRiples{
+
+            position: absolute;
+
+            width: 0px;
+            height: 0px;
+            border:2px solid rgba(192, 63, 164, 0.096);
+            border-radius: 50%;
+            background: radial-gradient(rgba(201, 25, 157, 0.3),rgba(250, 40, 222, 0.5));
+            -webkit-animation: gote 4s linear infinite;
+        }
+
+        .r1{
+           -webkit-animation-delay: .8s;
+        }
+        .r2{
+            -webkit-animation-delay: 1.6s;
+        }
+        .r3{
+            -webkit-animation-delay: 2.4s;
+        }
+        .r4{
+            -webkit-animation-delay: 3.2s;
+        }
+        .r5{
+            -webkit-animation-delay: 4s;
+        }
+        @keyframes gote {
+            from{
+                width: 0px;
+                height: 0%;
+                -webkit-transform: translateY(0%);
+            }to{
+
+                width:400px;
+                height:400px;
+                -webkit-transform: translateY(300px);
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="contenido">
+        <div id="jeacodeRiple">
+            by JeanCode
+        </div>
+        <div id="riples">
+
+            <div class="itemRiples r1"></div>
+            <div class="itemRiples r2"></div>
+            <div class="itemRiples r3"></div>
+            <div class="itemRiples r4"></div>
+            <div class="itemRiples r5"></div>
+
+            
+        </div>
+
+    </div>
+</body>
+</html>
